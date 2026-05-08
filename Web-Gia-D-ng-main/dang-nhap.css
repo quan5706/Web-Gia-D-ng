@@ -1,0 +1,197 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+
+  /* BACKGROUND ẢNH - ĐÃ SỬA ĐÚNG CÚ PHÁP */
+  background-image: url("https://eurosun.com.vn/wp-content/uploads/2023/02/banner-MC1801-luxury-1920x800-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Khung form đăng nhập/đăng ký */
+.login {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Định dạng tiêu đề và đoạn văn */
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.signup {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup:hover {
+  text-decoration: underline;
+}
+
+/* Căn chỉnh icon mạng xã hội */
+.mxh {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.mxh button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  gap: 8px;
+}
+
+.mxh button:hover {
+  background-color: #f0f0f0;
+}
+
+.mxh .icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Chữ OR với đường kẻ ngang */
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.or::before {
+  margin-right: 10px;
+}
+
+.or::after {
+  margin-left: 10px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background-color: #eef4ff;
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #6a1b9a;
+}
+
+/* Fix màu nền input khi autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #eef4ff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Thông báo lỗi và thành công */
+.error-message {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.success-message {
+  color: #388e3c;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Khu vực nút bấm */
+.xacnhan {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.forgot,
+.dn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.forgot {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.dn {
+  background: #1a1c1e;
+  color: white;
+}
+
+.forgot:hover {
+  background: #e0e0e0;
+}
+
+.dn:hover {
+  background: #333;
+}

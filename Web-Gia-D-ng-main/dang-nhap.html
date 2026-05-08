@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="dang-nhap.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h2>Đăng Nhập</h2>
+      <p>
+        Don't have an account?
+        <a href="./dang-ky.html" class="signup">Sign up</a>
+      </p>
+
+      <div class="mxh">
+        <button type="button">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+            alt="Google"
+            class="icon"
+          />
+          Google
+        </button>
+        <button type="button">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg"
+            alt="Facebook"
+            class="icon"
+          />
+          Facebook
+        </button>
+      </div>
+
+      <div class="or">OR</div>
+
+      <form id="loginForm" autocomplete="off">
+        <div class="input-group">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            autocomplete="new-password"
+            required
+          />
+        </div>
+
+        <div id="loginError" class="error-message"></div>
+
+        <div class="xacnhan">
+          <button type="button" class="forgot" id="forgotBtn">
+            Forgot Password?
+          </button>
+          <button type="submit" class="dn">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
